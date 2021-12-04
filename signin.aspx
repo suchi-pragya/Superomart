@@ -11,9 +11,13 @@
                     <h1 class="font-weight-bold">Sign in</h1><br />
                     <asp:TextBox ID="TextBox2" runat="server" cssclass="form-control" placeholder="Enter your Email-ID"></asp:TextBox><br />
                     <asp:TextBox ID="TextBox4" runat="server" cssclass="form-control" placeholder="Enter your password"></asp:TextBox><br />
-                    <asp:Button runat="server" Text="Sign in" cssclass="btn btn-info font-weight-bold w-100" /> <br /><br />
+                   <%--  <asp:Button runat="server" Text="Sign in" cssclass="btn btn-info font-weight-bold w-100" OnClick="Unnamed1_Click" /> <br /><br />
+                  --%>
+                    
+                    <asp:Button ID="Button1" runat="server" Text="sign in" cssclass="btn btn-info font-weight-bold w-100" OnClick="Unnamed1_Click" /><br /><br />
+                    
                     <p> <a href="register.aspx" class="text-primary">Don't have an account? sign Up</a></p>
-
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 </div>          
             </div>
         </div>
