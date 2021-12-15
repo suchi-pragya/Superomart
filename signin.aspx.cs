@@ -45,7 +45,7 @@ namespace Superomart
                 email_address = read.GetValue(0).ToString().Trim();
                 password = read.GetValue(1).ToString().Trim();
                 Session["email_id"] = email_address.ToString();
-                Response.Redirect("~/User_Home/WelcomeNew.aspx");
+                Response.Redirect("WelcomeNew.aspx");
 
 
             }

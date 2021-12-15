@@ -13,6 +13,14 @@
                     <asp:TextBox ID="TextBox2" runat="server" cssclass="form-control" placeholder="Enter your Email-ID"></asp:TextBox><br />
                     <asp:TextBox ID="TextBox3" runat="server" cssclass="form-control" placeholder="Enter your Contact No"></asp:TextBox><br />
                     <asp:TextBox ID="TextBox4" runat="server" cssclass="form-control" placeholder="Enter your password"></asp:TextBox><br />
+                    <asp:DropDownList ID="DropDownList1" cssclass="form-control" runat="server">
+                        <asp:ListItem>Select Gender</asp:ListItem>
+                        <asp:ListItem>Male</asp:ListItem>
+                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem>Transgender</asp:ListItem>
+                        
+                    </asp:DropDownList>
+                    <asp:FileUpload ID="FileUpload1" cssclass="form-control" runat="server" /><br />
                     <asp:Button runat="server" Text="Register" cssclass="btn btn-info font-weight-bold w-100" OnClick="Unnamed1_Click" /> <br /><br />
                     <p> <a href="signin.aspx" class="text-primary">Already have an account? sign in</a></p>
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

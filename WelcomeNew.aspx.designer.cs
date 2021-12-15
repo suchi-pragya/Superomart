@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Superomart.User_Home
+namespace Superomart
 {
 
 
-    public partial class WelcomeNew
+    public partial class WebForm2
     {
 
         /// <summary>

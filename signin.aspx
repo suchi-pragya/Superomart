@@ -10,7 +10,7 @@
                     <img src="images/avtar.png" class="w-25 m-3 rounded-circle" />
                     <h1 class="font-weight-bold">Sign in</h1><br />
                     <asp:TextBox ID="TextBox2" runat="server" cssclass="form-control" placeholder="Enter your Email-ID"></asp:TextBox><br />
-                    <asp:TextBox ID="TextBox4" runat="server" cssclass="form-control" placeholder="Enter your password"></asp:TextBox><br />
+                    <asp:TextBox ID="TextBox4" runat="server" cssclass="form-control" TextMode="Password" placeholder="Enter your password"></asp:TextBox><br />
                    <%--  <asp:Button runat="server" Text="Sign in" cssclass="btn btn-info font-weight-bold w-100" OnClick="Unnamed1_Click" /> <br /><br />
                   --%>
                     

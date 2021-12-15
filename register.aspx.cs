@@ -16,6 +16,8 @@ namespace Superomart
 {
     public partial class enquiry : System.Web.UI.Page
     {
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["suchi"].ConnectionString);
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,14 +26,22 @@ namespace Superomart
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["suchi"].ConnectionString);
+            string filename_photo = Path.GetFileName(FileUpload1.PostedFile.FileName);
+            FileUpload1.SaveAs(Server.MapPath("photo/" + filename_photo));
+
             con.Open();
-            string inscmd = "insert into shoppingmart(name,email_id,contact,password,time)values(@name,@email_id,@contact,@password,@time)";
+            string inscmd = "insert into shoppingmart(name,email_id,contact,password,time,gender,filepath_photo)values(@name,@email_id,@contact,@password,@time,@gender,@filepath_photo)";
             SqlCommand insertuser = new SqlCommand(inscmd, con);
             insertuser.Parameters.AddWithValue("@name", TextBox1.Text);
             insertuser.Parameters.AddWithValue("@email_id", TextBox2.Text);
             insertuser.Parameters.AddWithValue("@contact", TextBox3.Text);
             insertuser.Parameters.AddWithValue("@password",MyEncrypt( TextBox4.Text));
             insertuser.Parameters.AddWithValue("@time", DateTime.Now.ToString());
+            insertuser.Parameters.AddWithValue("@gender", DropDownList1.Text);
+            insertuser.Parameters.AddWithValue("@filepath_photo", "photo/" + filename_photo);
+
+
+
 
 
 

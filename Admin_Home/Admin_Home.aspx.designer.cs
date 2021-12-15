@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace Superomart
+namespace Superomart.Admin_Home
 {
-    public partial class WebForm2
+    public partial class Admin_Home
     {
     }
 }

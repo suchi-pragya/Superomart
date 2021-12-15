@@ -5,13 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Superomart.User_Home
+namespace Superomart.Admin_Home
 {
-    public partial class WelcomeNew : System.Web.UI.Page
+    public partial class Admin_Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
